@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | MetaToRI World</title>
+    <title>Introduction | MetaToRI World</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
     <style>
         :root {
@@ -34,7 +34,7 @@
             transform: translateY(0);
         }
 
-        /* [수정] 상단 헤더: 로고와 정확한 명칭 적용 */
+        /* 상단 헤더 */
         header {
             position: fixed; top: 0; width: 100%; height: 80px;
             display: flex; justify-content: space-between; align-items: center;
@@ -55,7 +55,16 @@
             text-transform: uppercase;
         }
 
-        .back-link { text-decoration: none; color: #fff; font-size: 0.75rem; font-weight: 600; opacity: 0.5; transition: 0.3s; letter-spacing: 0.1em; }
+        /* 디렉토리(Menu)로 돌아가는 링크 */
+        .back-link { 
+            text-decoration: none; 
+            color: #fff; 
+            font-size: 0.75rem; 
+            font-weight: 600; 
+            opacity: 0.5; 
+            transition: 0.3s; 
+            letter-spacing: 0.1em; 
+        }
         .back-link:hover { opacity: 1; }
 
         /* 섹션 구성 */
@@ -70,10 +79,17 @@
 
         .highlight-box { border-left: 2px solid var(--accent); padding-left: 30px; margin: 8vh 0; }
 
+        /* 하단 내비게이션 (Overview로 연결) */
         .next-nav { padding: 10vh 5vw 20vh; text-align: center; }
         .next-label { font-size: 0.7rem; letter-spacing: 0.5em; opacity: 0.4; display: block; margin-bottom: 20px; }
-        .next-link { font-size: clamp(1.8rem, 5vw, 3.5rem); font-weight: 800; text-decoration: none; color: inherit; transition: 0.4s; }
-        .next-link:hover { color: var(--accent); }
+        .next-link { 
+            font-size: clamp(1.8rem, 5vw, 3.5rem); 
+            font-weight: 800; 
+            text-decoration: none; 
+            color: inherit; 
+            transition: 0.4s; 
+        }
+        .next-link:hover { color: var(--accent); transform: translateX(10px); display: inline-block; }
 
         @media (max-width: 768px) {
             .brand-label { font-size: 0.75rem; letter-spacing: 0.2em; }
@@ -83,11 +99,11 @@
 <body>
 
     <header>
-        <a href="directory.html" class="brand-nav">
+        <a href="https://metatoriworld.github.io/Menu/" class="brand-nav">
             <img src="https://raw.githubusercontent.com/metatoriworld/Logo/main/WhiteLogo.png" alt="MTW Logo">
             <span class="brand-label">MetaToRI World</span>
         </a>
-        <a href="directory.html" class="back-link">CLOSE</a>
+        <a href="https://metatoriworld.github.io/Menu/" class="back-link">CLOSE</a>
     </header>
 
     <main>
@@ -152,7 +168,7 @@
 
         <div class="next-nav reveal">
             <span class="next-label">NEXT CHAPTER</span>
-            <a href="overview.html" class="next-link">개요 →</a>
+            <a href="https://metatoriworld.github.io/Overview/" class="next-link">개요 →</a>
         </div>
     </main>
 
